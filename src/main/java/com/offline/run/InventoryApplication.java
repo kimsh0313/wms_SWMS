@@ -3,6 +3,7 @@ import com.offline.dto.OfflineStackDto;
 
 import com.offline.service.ShoeService;
 
+import java.util.List;
 import java.util.Scanner;
 public class InventoryApplication {
     public static void main(String[] args) {
@@ -11,8 +12,8 @@ public class InventoryApplication {
         System.out.print("검색할 신발 번호: ");
         String code = sc.nextLine();
 
-        OfflineStackDto shoes = new ShoeService().shoesSearch(code);
-        System.out.println(shoes);
+        List<OfflineStackDto> shoes = new ShoeService().shoesSearch(code);
+
     }
 
 

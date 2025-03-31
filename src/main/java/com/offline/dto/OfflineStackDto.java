@@ -1,5 +1,8 @@
 package com.offline.dto;
 import lombok.*;
+
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -12,4 +15,5 @@ public class OfflineStackDto {
     private String shoeCode;
     private String storeCode;
     private int quantity;
+
 }
